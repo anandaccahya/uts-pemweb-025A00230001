@@ -183,3 +183,35 @@ footer p {
         grid-template-columns: 1fr;
     }
 }
+
+.ringkasan {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin: 20px 0 30px;
+}
+
+.ringkasan-item {
+    background-color: #f3e4d5;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.ringkasan-item strong {
+    display: block;
+    font-size: 26px;
+    color: #7b4d32;
+}
+
+.ringkasan-item span {
+    display: block;
+    margin-top: 5px;
+    color: #66564b;
+}
+
+@media (max-width: 600px) {
+    .ringkasan {
+        grid-template-columns: 1fr;
+    }
+}
