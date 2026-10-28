@@ -33,6 +33,30 @@ require_once 'functions.php';
 
         <section>
             <h2>Daftar Jajanan</h2>
+
+        <div class="ringkasan">
+
+            <div class="ringkasan-item">
+                <strong><?= htmlspecialchars((string) count($jajanan)) ?></strong>
+                <span>Jenis Jajanan</span>
+            </div>
+
+            <div class="ringkasan-item">
+                <strong>
+                    <?= htmlspecialchars((string) array_sum(array_column($jajanan, "stok"))) ?>
+                </strong>
+                <span>Total Stok</span>
+            </div>
+
+            <div class="ringkasan-item">
+                <strong>
+                    <?= htmlspecialchars((string) count(array_unique(array_column($jajanan, "kategori")))) ?>
+                </strong>
+                <span>Kategori</span>
+            </div>
+
+        </div>
+
             <div class="katalog">
                 <?php foreach ($jajanan as $item): ?>
                     <article class="kartu">
