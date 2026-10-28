@@ -145,3 +145,41 @@ footer p {
         padding: 22px;
     }
 }
+
+/* Katalog jajanan */
+.katalog {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.kartu {
+    background-color: #fffaf5;
+    padding: 22px;
+    border: 1px solid #eadfd4;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.kartu:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 15px rgba(75, 48, 32, 0.12);
+}
+
+.kartu h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #7b4d32;
+    font-size: 21px;
+}
+
+.kartu p {
+    margin: 8px 0;
+}
+
+/* Katalog pada layar kecil */
+@media (max-width: 600px) {
+    .katalog {
+        grid-template-columns: 1fr;
+    }
+}
