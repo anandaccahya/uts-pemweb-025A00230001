@@ -3,18 +3,18 @@
 ## 1. Identitas
 
 - **Nama:** Ananda Eka Cahya
-- **NIM:** [Isi NIM]
-- **Kelas:** [Isi Kelas]
+- **NIM:** 025A00230001
+- **Kelas:** 2A-3A
 - **Mata Kuliah:** Pemrograman Web
 - **Program Studi:** Informatika
 - **Jenis Proyek:** Proyek Mini Individu
-- **Tema:** Jajanan Pasar
+- **Tema:** UMKM Jajanan Pasar
 
 ---
 
 ## 2. Deskripsi Proyek
 
-Project ini dibuat untuk memenuhi tugas UTS Pemrograman Web dengan tema **Jajanan Pasar**.
+Project ini dibuat untuk memenuhi tugas UTS Pemrograman Web dengan tema **UMKM Jajanan Pasar**.
 
 Website digunakan untuk menampilkan informasi dan katalog jajanan pasar secara dinamis. Data jajanan disimpan menggunakan array PHP dan ditampilkan pada halaman katalog.
 
@@ -34,14 +34,9 @@ Project dijalankan menggunakan Laragon.
 4. Klik **Start All**.
 5. Buka browser.
 6. Masukkan alamat berikut:
-
-``
-http://localhost/uts-pemweb-NIM/
-
+http://localhost/uts-pemweb-025A00230001/
 7. Website akan menampilkan halaman utama.
 8. Gunakan menu navigasi untuk berpindah ke halaman katalog.
-
-> Ganti `uts-pemweb-NIM` dengan nama folder project yang digunakan.
 
 ---
 
@@ -136,7 +131,7 @@ uts-pemweb-NIM/
 
 ### Keterangan
 
-- `index.php` → halaman profil utama
+- `index.php` → halamanprofil utama
 - `katalog.php` → halaman katalog jajanan pasar
 - `data.php` → menyimpan data jajanan dalam array
 - `functions.php` → menyimpan fungsi buatan sendiri
