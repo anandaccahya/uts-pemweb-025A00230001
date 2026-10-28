@@ -1,6 +1,9 @@
 <?php
 declare(strict_types=1);
+require_once 'data.php';
+require_once 'functions.php';
 ?>
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -11,10 +14,11 @@ declare(strict_types=1);
 </head>
 
 <body>
+
     <header>
         <div class="container">
             <h1>Katalog Jajanan Pasar</h1>
-            <p>Daftar jajanan pasar tradisional.</p>
+            <p>Berbagai pilihan jajanan tradisional Indonesia.</p>
         </div>
     </header>
 
@@ -26,12 +30,35 @@ declare(strict_types=1);
     </nav>
 
     <main class="container">
+
         <section>
             <h2>Daftar Jajanan</h2>
-            <p>
-                Daftar jajanan pasar akan ditampilkan secara dinamis
-                menggunakan data dari PHP.
-            </p>
+            <div class="katalog">
+                <?php foreach ($jajanan as $item): ?>
+                    <article class="kartu">
+                        <h3>
+                            <?= htmlspecialchars($item["nama"]) ?>
+                        </h3>
+                        <p>
+                            <strong>Kategori:</strong>
+                            <?= htmlspecialchars($item["kategori"]) ?>
+                        </p>
+                        <p>
+                            <strong>Harga:</strong>
+                            <?= htmlspecialchars(formatHarga($item["harga"])) ?>
+                        </p>
+                        <p>
+                            <strong>Stok:</strong>
+                            <?= htmlspecialchars((string) $item["stok"]) ?>
+                            <?= htmlspecialchars($item["satuan"]) ?>
+                        </p>
+                        <p>
+                            <strong>Status:</strong>
+                            <?= htmlspecialchars(statusStok($item["stok"])) ?>
+                        </p>
+                    </article>
+                <?php endforeach; ?>
+            </div>
         </section>
     </main>
 
