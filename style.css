@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f3ed;
+    color: #3f3025;
+}
+
+/* Container utama */
+.container {
+    width: 90%;
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #9b6544, #c88b62);
+    color: white;
+    padding: 55px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0 0 8px;
+    font-size: 38px;
+    letter-spacing: 1px;
+}
+
+header p {
+    margin: 0;
+    font-size: 17px;
+}
+
+/* Navigasi */
+nav {
+    background-color: #4f3425;
+    padding: 15px 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+nav .container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 9px 18px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: #9b6544;
+}
+
+/* Isi halaman */
+main {
+    padding: 45px 0;
+    min-height: 450px;
+}
+
+section {
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    border: 1px solid #eadfd4;
+    box-shadow: 0 4px 12px rgba(75, 48, 32, 0.08);
+}
+
+section h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #7b4d32;
+    font-size: 25px;
+}
+
+section p {
+    color: #66564b;
+}
+
+/* Tombol */
+.button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 11px 22px;
+    background-color: #9b6544;
+    color: white;
+    text-decoration: none;
+    border-radius: 7px;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background-color: #6f452f;
+    transform: translateY(-2px);
+}
+
+/* Footer */
+footer {
+    background-color: #4f3425;
+    color: white;
+    padding: 22px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Tampilan layar kecil */
+@media (max-width: 600px) {
+
+    header {
+        padding: 40px 0;
+    }
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    header p {
+        font-size: 15px;
+    }
+
+    nav .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav a {
+        display: block;
+    }
+
+    section {
+        padding: 22px;
+    }
+}
