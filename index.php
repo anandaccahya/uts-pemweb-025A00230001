@@ -7,9 +7,7 @@ declare(strict_types=1);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Jajanan Pasar - Beranda</title>
-
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -17,8 +15,8 @@ declare(strict_types=1);
 
     <header>
         <div class="container">
-            <h1>Jajanan Pasar</h1>
-            <p>Mengenal berbagai jajanan tradisional Indonesia.</p>
+            <h1>JAJANAN PASAR</h1>
+            <p>Warisan rasa yang selalu punya tempat di hati dan mengingatkan pada cita rasa Indonesia.</p>
         </div>
     </header>
 
@@ -30,36 +28,62 @@ declare(strict_types=1);
     </nav>
 
     <main class="container">
+        <section class="hero">
+
+            <div class="hero-content">
+                <h2>Kenali Jajanan Tradisional Indonesia</h2>
+
+                <p>
+                    Jajanan pasar merupakan bagian dari kuliner tradisional
+                    Indonesia yang memiliki beragam bentuk, rasa, dan bahan
+                    dari berbagai daerah.
+                </p>
+
+                <a class="button" href="katalog.php">
+                    Lihat Katalog
+                </a>
+            </div>
+
+            <div class="foto header-image-container">
+                <img
+                    src="assets/foto header.png"
+                    alt="Berbagai jajanan pasar tradisional Indonesia"
+                    class="hero-image"
+                >
+            </div>
+        </section>
 
         <section>
             <h2>Tentang Jajanan Pasar</h2>
 
             <p>
-                Jajanan pasar merupakan makanan tradisional yang banyak
-                ditemukan di berbagai daerah Indonesia. Setiap jajanan
-                memiliki bentuk, rasa, dan bahan yang berbeda.
+                Jajanan pasar merupakan salah satu bagian dari kekayaan kuliner tradisional Indonesia
+                yang sudah dikenal dan diwariskan dari generasi ke generasi. Berbagai jenis jajanan
+                dapat ditemukan di banyak daerah dengan ciri khas yang berbeda-beda. Ada jajanan
+                dengan rasa manis, gurih, hingga perpaduan rasa yang unik. Bahan yang digunakan juga
+                cukup beragam, seperti tepung beras, ketan, kelapa, gula merah, dan bahan-bahan
+                sederhana lainnya yang diolah menjadi makanan dengan cita rasa khas.
             </p>
 
             <p>
-                Website ini dibuat sebagai katalog sederhana untuk
-                memperkenalkan beberapa jajanan pasar dan menampilkan
-                informasi seperti kategori, harga, dan stok.
+                Keberagaman tersebut membuat jajanan pasar tidak hanya menarik dari segi rasa,
+                tetapi juga memiliki nilai budaya yang dekat dengan kehidupan masyarakat. Beberapa
+                jajanan sering hadir dalam berbagai kegiatan, seperti acara keluarga, perayaan
+                tradisional, hingga menjadi pilihan makanan sehari-hari. Meskipun zaman terus
+                berkembang dan banyak makanan modern bermunculan, jajanan pasar tetap memiliki
+                daya tarik tersendiri karena cita rasanya yang khas dan mudah dikenali.
             </p>
-        </section>
-
-        <section>
-            <h2>Jelajahi Katalog</h2>
 
             <p>
-                Lihat daftar jajanan pasar yang tersedia pada halaman
-                katalog.
+                Website ini dibuat sebagai katalog sederhana untuk memperkenalkan berbagai jajanan
+                pasar tradisional Indonesia dengan cara yang lebih mudah dan menarik. Pengunjung
+                dapat melihat beberapa pilihan jajanan beserta informasi seperti nama, kategori,
+                harga, dan stok yang tersedia. Dengan adanya katalog ini, diharapkan pengunjung
+                dapat lebih mengenal keberagaman jajanan pasar sekaligus ikut menghargai
+                keberadaan kuliner tradisional Indonesia.
             </p>
 
-            <a class="button" href="katalog.php">
-                Lihat Katalog
-            </a>
         </section>
-
     </main>
 
     <footer>
