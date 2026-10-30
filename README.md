@@ -7,18 +7,17 @@
 - **Kelas:** 2A-3A
 - **Mata Kuliah:** Pemrograman Web
 - **Program Studi:** Informatika
-- **Jenis Proyek:** Proyek Mini Individu
-- **Tema:** UMKM Jajanan Pasar
+- **Tema:** Jajanan Pasar
 
 ---
 
 ## 2. Deskripsi Proyek
 
-Project ini dibuat untuk memenuhi tugas UTS Pemrograman Web dengan tema **UMKM Jajanan Pasar**.
+Project ini merupakan website sederhana yang dibuat untuk memenuhi tugas UTS Pemrograman Web dengan tema **Jajanan Pasar**.
 
-Website digunakan untuk menampilkan informasi dan katalog jajanan pasar secara dinamis. Data jajanan disimpan menggunakan array PHP dan ditampilkan pada halaman katalog.
+Website digunakan untuk menampilkan informasi dan katalog jajanan pasar  yang dilengkapi dengan nama, kategori, harga, dan stok. Data jajanan disimpan menggunakan array PHP dan ditampilkan pada halaman katalog.
 
-Project dibuat menggunakan HTML, CSS, dan PHP sesuai dengan materi yang telah dipelajari.
+Project dibuat menggunakan HTML, CSS, dan PHP sesuai dengan materi yang telah dipelajari dan belum menggunakan database.
 
 ---
 
@@ -41,41 +40,28 @@ http://localhost/uts-pemweb-025A00230001/
 ---
 
 ## 4. Daftar Fitur
-
-| No. | Fitur | File | Fungsi yang Menangani |
-|---|---|---|---|
-| 1 | Menampilkan halaman profil | `index.php` | - |
-| 2 | Menampilkan katalog jajanan pasar | `katalog.php` | - |
-| 3 | Menampilkan data dari array PHP | `katalog.php` | `foreach` |
-| 4 | Menampilkan kondisi data | `katalog.php` | `if` / `match` |
-| 5 | Mengolah data katalog | `functions.php` | [Nama fungsi] |
-| 6 | Menampilkan ringkasan data | `katalog.php` | [Nama fungsi] |
-| 7 | Navigasi antarhalaman | `index.php`, `katalog.php` | - |
-| 8 | Mengatur tampilan website | `style.css` | - |
+1. **Halaman Beranda** - `index.php` : Menampilkan informasi mengenai jajanan pasar serta navigasi ke Beranda dan Katalog.
+2. **Halaman Katalog** - `katalog.php`: Menampilkan katalog jajanan pasar 
+3. **Perulangan Data** -  `katalog.php` : Menggunakan `foreach` untuk menampilkan seluruh data dari $jajanan
+4. **Format Harga Rupiah** - `functions.php` : Menggunakan fungsi `formatHarga()`untuk mengubah angka menjadi format seperti Rp 3.000
+5. **Kondisi Stok** - `functions.php` : Menggunakan fungsi `statusStok()` untuk menampilkan status stok berdasarkan jumlah stok
+6. **Ringkasan Data Katalog** - `katalog.php` : Menampilkan jumlah jenis jajanan, total stok, jumlah kategori 
+7. **Navigasi antarhalaman** - `index.php`, `katalog.php`: Memudahkan perpindahan antara halaman Beranda dan Katalog
+8. **Tampilan Responsif** -  `style.css` : Tampilan menyesuaikan ukuran desktop, tablet, serta HP menggunakan `@media`
+9. **Keamanan Output** - `katalog.php` : Menggunakan `htmlspecialchars()` saat menampilkan data agar output lebih aman
 
 ### Fungsi Buatan Sendiri
-
 Fungsi buatan sendiri digunakan untuk membantu mengolah data dan menampilkan hasil pada halaman website.
-
-| No. | Nama Fungsi | Kegunaan |
-|---|---|---|
-| 1 | `[namaFungsi1]()` | [Kegunaan fungsi] |
-| 2 | `[namaFungsi2]()` | [Kegunaan fungsi] |
+1. `formatHarga()` - `int $harga` : Mengubah angka harga menjadi format rupiah|
+2. `statusStok()` - `int $stok` : Menentukan status stok berdasarkan jumlah stok. Jika stok ≤ 5, menampilkan Stok sedikit, selain itu Stok tersedia
 
 ---
 
 ## 5. Fungsi Array Bawaan PHP
-
-Beberapa fungsi array bawaan PHP yang digunakan dalam project:
-
-| No. | Fungsi | Kegunaan |
-|---|---|---|
-| 1 | `count()` | Menghitung jumlah data dalam array |
-| 2 | `array_filter()` | Menyaring data berdasarkan kondisi tertentu |
-| 3 | `array_column()` | Mengambil nilai dari kolom tertentu pada array |
-| 4 | `array_sum()` | Menjumlahkan nilai dalam array |
-
-Fungsi yang digunakan akan disesuaikan dengan implementasi akhir pada program.
+1.  `count()` :  Menghitung jumlah data jajanan dan jumlah kategori
+2. `array_column()` : Mengambil nilai dari kolom tertentu dari array seperti stok dan kategori
+3. `array_sum()` : Menjumlahkan nilai dalam array
+4. `array_unique()` : Menghilangkan data kategori yang sama untuk mendapatkan jumlah kategori yang berbeda
 
 ---
 
@@ -83,60 +69,26 @@ Fungsi yang digunakan akan disesuaikan dengan implementasi akhir pada program.
 
 ### 6.1 Halaman Profil
 
-![Halaman Profil](screenshots/halaman-profil.png)
+![Halaman Profil](screenshoots/halaman-profil.png)
 
 ### 6.2 Halaman Katalog
 
-![Halaman Katalog](screenshots/halaman-katalog.png)
+### 6.2 Halaman Katalog
+
+![Halaman Katalog](screenshoots/halaman-katalog.png)
+
+![Halaman Katalog Lanjutan](<screenshoots/halaman-katalog lanjutan.png>)
 
 ---
 
 ## 7. Sumber Referensi dan Catatan Pemakaian AI
 
 ### Sumber Referensi
-
-- PHP Documentation  
-  https://www.php.net/
-
-- MDN Web Docs  
-  https://developer.mozilla.org/
-
-- W3Schools  
-  https://www.w3schools.com/
-
-Referensi digunakan untuk membantu memahami sintaks, konsep PHP, HTML, dan CSS yang digunakan dalam project.
+ Materi dari contoh yang diberikan pada perkuliahan Pemrograman Web 
 
 ### Catatan Pemakaian AI
-
-AI digunakan sebagai alat bantu dalam proses pengerjaan project, terutama untuk membantu memahami konsep, mencari solusi ketika terdapat error, dan memberikan masukan terhadap struktur kode.
-
-Kode yang digunakan diperiksa dan disesuaikan kembali dengan kebutuhan project. Mahasiswa bertanggung jawab untuk memahami dan dapat menjelaskan kode yang digunakan pada saat demo.
+1. Membantu memahami cara menggunakan Git dan GitHub dan cara melakukan git add, git commit, dan git push.
+2. Membantu memberikan saran untuk tampilan dan penyesuaian CSS agar website lebih rapi dan responsif.
+3. Membantu memahami beberapa fungsi dan konsep HTML, CSS, serta PHP yang digunakan dalam project.
 
 ---
-
-## Struktur Folder
-
-```text
-uts-pemweb-NIM/
-├── index.php
-├── katalog.php
-├── data.php
-├── functions.php
-├── style.css
-├── assets/
-├── screenshots/
-├── README.md
-└── .gitignore
-```
-
-### Keterangan
-
-- `index.php` → halamanprofil utama
-- `katalog.php` → halaman katalog jajanan pasar
-- `data.php` → menyimpan data jajanan dalam array
-- `functions.php` → menyimpan fungsi buatan sendiri
-- `style.css` → mengatur tampilan website
-- `assets/` → menyimpan gambar yang digunakan
-- `screenshots/` → menyimpan screenshot untuk README
-- `README.md` → dokumentasi project
-- `.gitignore` → mengatur file yang tidak perlu dimasukkan ke repository
