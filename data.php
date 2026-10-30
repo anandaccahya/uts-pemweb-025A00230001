@@ -5,7 +5,7 @@ $jajanan = [
         "nama" => "Klepon",
         "kategori" => "Kue Tradisional",
         "harga" => 3000,
-        "stok" => 25,
+        "stok" => 4,
         "satuan" => "pcs",
         "gambar" => "klepon.png"
     ],
