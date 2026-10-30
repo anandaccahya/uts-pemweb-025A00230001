@@ -6,107 +6,239 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #f8f3ed;
-    color: #3f3025;
+    background-color: #f7f3ee;
+    color: #3d3028;
 }
 
-/* Container utama */
+/* CONTAINER*/
 .container {
-    width: 90%;
+    width: 92%;
     max-width: 1050px;
     margin: 0 auto;
 }
-
-/* Header */
+/* HEADER*/
 header {
-    background: linear-gradient(135deg, #9b6544, #c88b62);
+    background: linear-gradient(135deg, #4f8f9f, #285b68);
     color: white;
-    padding: 55px 0;
+    padding: 50px 0;
     text-align: center;
 }
 
 header h1 {
     margin: 0 0 8px;
-    font-size: 38px;
+    font-family: Georgia, serif;
+    font-size: 44px;
     letter-spacing: 1px;
 }
 
 header p {
     margin: 0;
     font-size: 17px;
+    color: #eef8fa;
 }
 
-/* Navigasi */
+/* NAVIGASI*/
 nav {
-    background-color: #4f3425;
-    padding: 15px 0;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+    background-color: #ffffff;
+    padding: 12px 0;
+    border-bottom: 1px solid #e3d8cd;
+    box-shadow: 0 2px 8px rgba(50, 40, 30, 0.08);
 }
 
 nav .container {
     display: flex;
     justify-content: center;
-    gap: 10px;
+    align-items: center;
+    gap: 8px;
 }
 
 nav a {
-    color: white;
+    color: #3d3028;
     text-decoration: none;
-    padding: 9px 18px;
-    border-radius: 6px;
+    padding: 9px 20px;
+    border-radius: 7px;
+    font-family: Georgia, serif;
+    font-size: 18px;
+    font-weight: bold;
     transition: 0.3s;
 }
 
 nav a:hover {
-    background-color: #9b6544;
+    background-color: #e5f1f3;
+    color: #285b68;
 }
 
-/* Isi halaman */
+/* ISI HALAMAN*/
 main {
-    padding: 45px 0;
-    min-height: 450px;
+    padding: 40px 0;
+    min-height: 500px;
 }
 
 section {
-    background-color: white;
+    background-color: #ffffff;
     padding: 30px;
     margin-bottom: 25px;
     border-radius: 12px;
-    border: 1px solid #eadfd4;
-    box-shadow: 0 4px 12px rgba(75, 48, 32, 0.08);
+    border: 1px solid #e7ddd4;
+    box-shadow: 0 4px 14px rgba(70, 50, 35, 0.07);
 }
 
 section h2 {
     margin-top: 0;
-    margin-bottom: 15px;
-    color: #7b4d32;
+    margin-bottom: 14px;
+    color: #72513d;
     font-size: 25px;
 }
 
+/* Paragraf Tentang Jajanan Pasar */
 section p {
-    color: #66564b;
+    color: #66584f;
+    font-size: 16px;
+    line-height: 1.8;
+    text-align: justify;
+    margin: 0 0 18px;
 }
 
-/* Tombol */
+section p:last-child {
+    margin-bottom: 0;
+}
+
+/* HERO */
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 35px;
+    padding: 35px;
+}
+
+.hero-content h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #72513d;
+    font-size: 30px;
+    line-height: 1.3;
+}
+
+.hero-content p {
+    margin-bottom: 20px;
+    color: #66584f;
+}
+
+.hero-image-container {
+    width: 100%;
+}
+
+.hero-image {
+    display: block;
+    width: 100%;
+    max-width: 480px;
+    height: 300px;
+    margin: 0 auto;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 12px;
+    border: 1px solid #e3d8cd;
+}
+
+/* TOMBOL*/
 .button {
     display: inline-block;
-    margin-top: 10px;
+    margin-top: 8px;
     padding: 11px 22px;
-    background-color: #9b6544;
+    background-color: #4f8f9f;
     color: white;
     text-decoration: none;
     border-radius: 7px;
+    font-weight: bold;
     transition: 0.3s;
 }
 
 .button:hover {
-    background-color: #6f452f;
+    background-color: #285b68;
     transform: translateY(-2px);
 }
 
-/* Footer */
+/* KATALOG*/
+.katalog {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+    width: 100%;
+}
+
+.kartu {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 18px;
+    border: 1px solid #e5dcd3;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.kartu:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 18px rgba(70, 50, 35, 0.12);
+}
+
+/* GAMBAR KATALOG */
+.kartu img {
+    display: block;
+    width: 75%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px;
+    margin: 0 auto 12px auto;
+}
+
+.kartu h3 {
+    margin: 0 0 12px;
+    color: #72513d;
+    font-size: 21px;
+}
+
+.kartu p {
+    margin: 7px 0;
+    color: #66584f;
+}
+
+.kartu p strong {
+    color: #3d3028;
+}
+
+/* RINGKASAN*/
+.ringkasan {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 15px;
+    margin: 20px 0 30px;
+}
+
+.ringkasan-item {
+    background-color: #edf5f6;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid #d7e7e9;
+}
+
+.ringkasan-item strong {
+    display: block;
+    font-size: 26px;
+    color: #285b68;
+}
+
+.ringkasan-item span {
+    display: block;
+    margin-top: 5px;
+    color: #66584f;
+}
+
+/* FOOTER*/
 footer {
-    background-color: #4f3425;
+    background-color: #4f8f9f;
     color: white;
     padding: 22px 0;
     text-align: center;
@@ -115,9 +247,42 @@ footer {
 footer p {
     margin: 0;
     font-size: 14px;
+    color: #eee7e1;
 }
 
-/* Tampilan layar kecil */
+/* TABLET*/
+@media (max-width: 800px) {
+
+    .container {
+        width: 90%;
+    }
+
+    .hero {
+        gap: 25px;
+        padding: 25px;
+    }
+
+    .hero-content h2 {
+        font-size: 26px;
+    }
+
+    .hero-image {
+        height: 250px;
+    }
+
+    .katalog {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+    }
+
+    .kartu img {
+    width: 75%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+}
+
+/* HP*/
 @media (max-width: 600px) {
 
     header {
@@ -134,84 +299,69 @@ footer p {
 
     nav .container {
         flex-direction: column;
-        text-align: center;
+        gap: 4px;
     }
 
     nav a {
         display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    main {
+        padding: 28px 0;
     }
 
     section {
         padding: 22px;
+        margin-bottom: 18px;
     }
-}
 
-/* Katalog jajanan */
-.katalog {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-}
+    section h2 {
+        font-size: 22px;
+    }
 
-.kartu {
-    background-color: #fffaf5;
-    padding: 22px;
-    border: 1px solid #eadfd4;
-    border-radius: 10px;
-    transition: 0.3s;
-}
-
-.kartu:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 6px 15px rgba(75, 48, 32, 0.12);
-}
-
-.kartu h3 {
-    margin-top: 0;
-    margin-bottom: 15px;
-    color: #7b4d32;
-    font-size: 21px;
-}
-
-.kartu p {
-    margin: 8px 0;
-}
-
-/* Katalog pada layar kecil */
-@media (max-width: 600px) {
-    .katalog {
+    /* Hero menjadi satu kolom */
+    .hero {
         grid-template-columns: 1fr;
+        gap: 25px;
+        padding: 22px;
     }
-}
 
-.ringkasan {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
-    margin: 20px 0 30px;
-}
+    .hero-content {
+        text-align: center;
+    }
 
-.ringkasan-item {
-    background-color: #f3e4d5;
-    padding: 20px;
-    text-align: center;
-    border-radius: 10px;
-}
+    .hero-content h2 {
+        font-size: 25px;
+    }
 
-.ringkasan-item strong {
-    display: block;
-    font-size: 26px;
-    color: #7b4d32;
-}
+    .hero-image {
+        width: 100%;
+        max-width: 100%;
+        height: 220px;
+    }
 
-.ringkasan-item span {
-    display: block;
-    margin-top: 5px;
-    color: #66564b;
-}
+    .button {
+        width: 100%;
+        text-align: center;
+    }
 
-@media (max-width: 600px) {
+    /* Katalog menjadi satu kolom */
+    .kartu {
+        padding: 15px;
+    }
+
+    .kartu img {
+        widht: 75%;
+        height: 180px;
+        object-fit:cover;
+        margin: 0 auto 12px auto;
+    }
+
+    /* Ringkasan menjadi satu kolom */
     .ringkasan {
         grid-template-columns: 1fr;
+        gap: 12px;
     }
 }
