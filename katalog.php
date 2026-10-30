@@ -17,8 +17,8 @@ require_once 'functions.php';
 
     <header>
         <div class="container">
-            <h1>Katalog Jajanan Pasar</h1>
-            <p>Berbagai pilihan jajanan tradisional Indonesia.</p>
+            <h1>KATALOG JAJANAN PASAR</h1>
+            <p>Temukan berbagai pilihan jajanan pasar dengan cita rasa khas, mulai dari makanan manis hingga gurih yang cocok untuk menemani berbagai suasana.</p>
         </div>
     </header>
 
@@ -60,6 +60,10 @@ require_once 'functions.php';
             <div class="katalog">
                 <?php foreach ($jajanan as $item): ?>
                     <article class="kartu">
+                        <img 
+                            src="assets/<?= htmlspecialchars($item["gambar"]) ?>" 
+                            alt="<?= htmlspecialchars($item["nama"]) ?>"
+                        >
                         <h3>
                             <?= htmlspecialchars($item["nama"]) ?>
                         </h3>
