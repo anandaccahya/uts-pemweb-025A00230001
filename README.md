@@ -73,11 +73,9 @@ Fungsi buatan sendiri digunakan untuk membantu mengolah data dan menampilkan has
 
 ### 6.2 Halaman Katalog
 
-### 6.2 Halaman Katalog
-
 ![Halaman Katalog](screenshoots/halaman-katalog.png)
 
-![Halaman Katalog Lanjutan](<screenshoots/halaman-katalog lanjutan.png>)
+![Halaman Katalog Lanjutan](screenshoots/halaman-katalog-lanjutan.png)
 
 ---
 
