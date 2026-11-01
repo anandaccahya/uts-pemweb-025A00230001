@@ -348,6 +348,10 @@ footer p {
     }
 
     /* Katalog menjadi satu kolom */
+    .katalog {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    }
     .kartu {
         padding: 15px;
     }
