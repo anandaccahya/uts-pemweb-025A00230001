@@ -44,7 +44,7 @@ declare(strict_types=1);
                 </a>
             </div>
 
-            <div class="foto header-image-container">
+            <div class="hero-image-container">
                 <img
                     src="assets/foto header.png"
                     alt="Berbagai jajanan pasar tradisional Indonesia"
