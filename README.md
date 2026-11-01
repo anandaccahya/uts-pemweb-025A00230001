@@ -33,7 +33,7 @@ Project dijalankan menggunakan Laragon.
 4. Klik **Start All**.
 5. Buka browser.
 6. Masukkan alamat berikut:
-http://localhost/uts-pemweb-025A00230001/
+http://localhost/uts-pemweb-025A002300001/
 7. Website akan menampilkan halaman utama.
 8. Gunakan menu navigasi untuk berpindah ke halaman katalog.
 
@@ -69,7 +69,7 @@ Fungsi buatan sendiri digunakan untuk membantu mengolah data dan menampilkan has
 
 ### 6.1 Halaman Profil
 
-![Halaman Profil](screenshoots/halaman-profil.png)
+![Halaman Beranda](screenshoots/halaman-profil.png)
 
 ### 6.2 Halaman Katalog
 
